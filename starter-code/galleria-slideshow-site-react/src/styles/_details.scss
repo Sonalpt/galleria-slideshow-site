@@ -1,0 +1,180 @@
+.galleryScreen {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.733);
+    min-width: 70%;
+    min-height: 80%;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    &__image {
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        min-width: 70rem;
+        min-height: 70rem;
+    }
+    &__close {
+        font-size: 1.4rem;
+        letter-spacing: 0.3rem;
+        color: white;
+        position: absolute;
+        transform: translateX(-50%);
+        top: 6%;
+        left: 93%;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+article {
+    display: flex;
+    margin-top: 6rem;
+}
+
+.detailsPictures {
+    min-width: 60%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    &__title {
+        z-index: 1;
+        margin: 0;
+        position: absolute;
+        right: 36.5%;
+        background-color: white;
+        min-width: 30%;
+        padding-left: 8rem;
+        
+        h3 {
+            font-size: 5.6rem;
+            max-width: 30rem;
+            position: relative;
+            bottom: 4rem;
+        }
+        h4 {
+            font-size: 1.5rem;
+            color: #7D7D7D;
+            position: relative;
+            bottom: 7rem;
+        }
+    }
+    &__gallery {
+        background-Repeat: no-repeat;
+        background-Size: cover;
+        background-Position: center;
+        color: white;
+        min-width: 50%;
+        max-width: 50%;
+        min-height: 56rem;
+        margin: 1rem;
+        &__artistPhoto {
+            background-Repeat: no-repeat;
+            background-Size: cover;
+            background-Position: center;
+            color: white;
+            min-width: 11rem;
+            max-width: 11rem;
+            min-height: 11rem;
+            margin: 1rem;
+            z-index: 1;
+            position: relative;
+            top: 50rem;
+            left: 56rem;
+        }
+        &__button {
+            display: flex;
+            font-size: 1rem;
+            letter-spacing: 0.2rem;
+            position: relative;
+            background-color: rgba(0, 0, 0, 0.767);
+            max-width: 12rem;
+            padding: 1rem;
+            top: 39rem;
+            left: 2rem;
+            &:hover {
+                cursor: pointer;
+            }
+            .arrowsIcon {
+                min-width: 1.2rem;
+                min-height: 1.2rem;
+                margin-right: 1rem;
+            }
+        }
+    }
+}
+.detailsText {
+    min-width: 20%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    a {
+        color: #7D7D7D;
+    }
+    &__year {
+        color: #F3F3F3;
+        font-size: 20rem;
+        position: relative;
+    }
+    &__mainText {
+        color: #7D7D7D;
+        line-height: 2.8rem;
+        max-width: 35rem;
+        z-index: 1;
+        position: relative;
+        bottom: 10rem;
+    }
+}
+
+.slideshow {
+    margin-top: 10rem;
+    margin-bottom: 2rem;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    display: flex;
+    flex-direction: column;
+    .slideshowBar {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%);
+        min-width: 108%;
+        min-height: 0.2rem;
+        max-height: 0.2rem;
+        background-color: #E5E5E5;
+        margin-bottom: 3.5rem;
+    }
+    .slideshowContent {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+        align-items: center;
+        .slideshowText {
+            display: flex;
+            flex-direction: column;
+            &__title {
+                font-size: 1.8rem;
+                margin-bottom: 1rem;
+            }
+            &__artist {
+                font-size: 1.3rem;
+                color: #7D7D7D;
+            }
+        }
+        .slideshowArrows {
+            display: flex;
+            .backward, .forward {
+                width: 6rem;
+                height: 2.5rem;
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    
+}
